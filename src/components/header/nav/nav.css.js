@@ -8,7 +8,7 @@ export const Container = styled.nav`
     padding: 0;
 
     li {
-      font-family: ${fonts.heading}
+      font-family: ${fonts.heading};
       font-weight: 700;
       font-size: 1.1rem;
 
