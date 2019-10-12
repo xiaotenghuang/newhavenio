@@ -1,6 +1,8 @@
 import React from 'react';
 import AppProvider from 'store/provider';
 import wrapPageElementWithTransition from 'helpers/wrapPageElement';
+require('typeface-source-sans-pro');
+require('typeface-lato');
 
 // React Context in Browser
 // eslint-disable-next-line react/prop-types
