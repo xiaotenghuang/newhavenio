@@ -4,10 +4,10 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 4rem;
+  padding: 2rem 4rem;
 
   a {
-    color: #757575;
+    color: ${p => p.theme.colors.Whites[100]};
     transition: color 0.2s ease;
     text-decoration: none;
 
