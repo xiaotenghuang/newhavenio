@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { accent } from 'constants/theme';
 
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -80,7 +79,6 @@ export default createGlobalStyle`
   }
 
   a {
-    color: ${accent};
   }
 
   pre {
