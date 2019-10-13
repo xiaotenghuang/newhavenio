@@ -1,13 +1,4 @@
-<p align="center">
-  <a href="https://github.com/fabe/gatsby-universal">
-    <img
-      src="https://i.imgur.com/MFWrZSx.png"
-      height="80"
-      alt="gatsby-universal"
-      title="gatsby-universal"
-    />
-  </a>
-</p>
+# NewHaven.io Website
 
 <p align="center">
   <a href="https://circleci.com/gh/fabe/gatsby-universal">
@@ -36,15 +27,10 @@
   </a>
 </p>
 
-<p align="center">
-  An <em>opinionated</em> Gatsby v2 starter with React Context, styled-components, page transitions, scroll events with <code>IntersectionObserver</code> and a focus on accessibility and SEO. Made for state-of-the-art marketing sites.
-</p>
+This site is an open source Gatsby site for the NewHaven.io community! We're a tech Meetup and Slack community in New Haven interested in bringing people together around and through technology.
 
-<p align="center">
-  <strong>
-    You can access a demo of this starter online at <a href="https://gatsby-universal.netlify.com">gatsby-universal.netlify.com</a>.
-  </strong>
-</p>
+
+## Site Template:
 
 ***
 
