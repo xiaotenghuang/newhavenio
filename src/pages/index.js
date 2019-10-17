@@ -17,12 +17,17 @@ const Index = () => (
       position="relative"
       padding="0 4rem"
       alignItems="flex-start"
+      style={{
+        overflow: 'hidden',
+      }}
     >
       <SplashShapeTop
         style={{
           position: 'absolute',
           top: '-210px',
-          left: '-4050px',
+          // left: '-4050px',
+          // left: '20%',
+          transform: 'translateX(-60%)',
           zIndex: -1,
         }}
       />
@@ -52,12 +57,19 @@ const Index = () => (
       flexDirection="column"
       alignItems="flex-end"
       padding="6rem 4rem 0"
+      style={{
+        overflow: 'hidden',
+      }}
     >
       <SplashShapeBottom
         style={{
           position: 'absolute',
           top: '0',
           right: '-8400px',
+          // transform: 'translateX(70%)',
+          // left: '0',
+          // right: '0',
+          // margin: 'auto',
           zIndex: -1,
         }}
       />
