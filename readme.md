@@ -1,12 +1,6 @@
 # NewHaven.io Website
 
-<p align="center">
-  <a href="https://circleci.com/gh/fabe/gatsby-universal">
-    <img
-      src="https://circleci.com/gh/fabe/gatsby-universal.svg?style=svg"
-      alt="CircleCI"
-    />
-  </a>
+[![CircleCI](https://circleci.com/gh/a-trost/newhavenio.svg?style=svg)](https://circleci.com/gh/a-trost/newhavenio)
   <a href="https://greenkeeper.io/">
     <img
       src="https://badges.greenkeeper.io/fabe/gatsby-universal.svg"
