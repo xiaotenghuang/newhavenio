@@ -1,25 +1,9 @@
 # NewHaven.io Website
 
 [![CircleCI](https://circleci.com/gh/a-trost/newhavenio.svg?style=svg)](https://circleci.com/gh/a-trost/newhavenio)
-  <a href="https://greenkeeper.io/">
-    <img
-      src="https://badges.greenkeeper.io/fabe/gatsby-universal.svg"
-      alt="Greenkeeper badge"
-    />
-  </a>
-  <a href="https://github.com/prettier/prettier">
-    <img
-      src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"
-      alt="styled with prettier"
-    />
-  </a>
-  <a href="https://app.netlify.com/sites/gatsby-universal/deploys">
-    <img
-      src="https://api.netlify.com/api/v1/badges/3e49bb6e-c385-4807-a7e8-70eea491cfdf/deploy-status"
-      alt="Netlify Status"
-    />
-  </a>
-</p>
+  [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/9fc179f1-e990-4301-a60f-4d0dedbcb593/deploy-status)](https://app.netlify.com/sites/fervent-kepler-18363b/deploys)
+
 
 This site is an open source Gatsby site for the NewHaven.io community! We're a tech Meetup and Slack community in New Haven interested in bringing people together around and through technology.
 
