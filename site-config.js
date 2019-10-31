@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: 'New Haven IO',
+  siteTitle: 'New Haven.io',
   siteTitleShort: 'nh.io',
   siteDescription: 'Where tech happens in New Haven',
   siteUrl: 'https://newhaven.io',
