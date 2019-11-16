@@ -11,9 +11,9 @@
       "warn",
       "single"
     ],
-    "prettier/prettier": "error",
-    "react/prop-types": "error",
-    "no-unused-vars": "error"
+    "prettier/prettier": "warn",
+    "react/prop-types": "warn",
+    "no-unused-vars": "warn"
   },
   "extends": [
     "eslint:recommended",
