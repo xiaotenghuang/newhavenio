@@ -1,18 +1,46 @@
-import React from 'react';
 import Layout from 'components/layout';
 import Box from 'components/shared/box';
-// import Button from 'components/shared/button';
+import Button from 'components/shared/button';
+import Text from 'components/shared/text';
 import Title from 'components/shared/title';
-// import Text from 'components/shared/text';
-// import SplashShapeTop from 'images/splash-shape-top.svg';
-import SplashShapeBottom from 'images/splash-shape-bottom.svg';
+import InviteForm from 'components/shared/inviteform';
+
+import React from 'react';
 
 const Index = () => (
   <Layout>
-    <Box padding="0 4rem">
-      <Title as="h2" size="large" color="Grays.100">
+    <Box
+      display="flex"
+      flexDirection="column"
+      minHeight="480px"
+      position="relative"
+      padding="0 4rem"
+      alignItems="flex-start"
+      bg="Oranges.100"
+    >
+      <Title as="h2" size="large" color="Whites.100" maxWidth="860px">
+        Where tech happens in New Haven.
+      </Title>
+      <Box maxWidth="640px">
+        <Text as="p" color="Whites.100">
+          NewHaven.io is a tech community lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </Text>
+      </Box>
+      <Button.Wrapper>
+        <Button palette="secondary">Join the Slack</Button>
+        <Button palette="tertiary">Join the Meetup</Button>
+      </Button.Wrapper>
+    </Box>
+    <Box padding="2rem 4rem">
+      <Title color="Oranges.100" size="small" weight="800" py="1rem">
+        ONLINE CHAT
+      </Title>
+      <Title as="h2" size="large" weight="800" color="Grays.100" pt="0">
         Join the Slack Community
       </Title>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <InviteForm />
     </Box>
     <Box
       minHeight="300px"
@@ -24,20 +52,12 @@ const Index = () => (
       style={{
         overflow: 'hidden',
       }}
+      bg="Grays.8"
     >
-      <SplashShapeBottom
-        style={{
-          position: 'absolute',
-          top: '0',
-          left: '-2000px',
-          // transform: 'translateX(70%)',
-          // left: '0',
-          // right: '0',
-          // margin: 'auto',
-          zIndex: -1,
-        }}
-      />
-      <Title as="h2" size="large" color="Grays.100">
+      <Title color="Oranges.100" size="small" weight="800" py="1rem">
+        UPCOMING EVENTS
+      </Title>
+      <Title as="h2" size="large" color="Grays.100" pt="0">
         Meet People IRL
       </Title>
     </Box>
