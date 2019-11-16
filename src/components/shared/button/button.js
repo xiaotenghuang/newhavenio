@@ -5,8 +5,8 @@ import * as Styled from './button.css';
 /**
  * A static display component that provides padding and a slight shadow.
  */
-const Button = ({ children, disabled, palette }) => (
-  <Styled.Container disabled={disabled} palette={palette}>
+const Button = ({ children, disabled, palette, click = () => {} }) => (
+  <Styled.Container disabled={disabled} palette={palette} onClick={click}>
     {children}
   </Styled.Container>
 );
@@ -14,6 +14,7 @@ const Button = ({ children, disabled, palette }) => (
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   disabled: PropTypes.bool,
+  click: PropTypes.func,
   palette: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
 };
 
