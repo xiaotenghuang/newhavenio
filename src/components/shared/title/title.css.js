@@ -1,15 +1,17 @@
 import styled from 'styled-components';
-import { color } from 'styled-system';
+import { color, layout, space } from 'styled-system';
 
 import MEDIA from 'helpers/mediaTemplates';
 import Text from 'components/shared/text';
 
 export const TitleText = styled(Text)`
-  ${color};
+  font-family: ${p => p.theme.fonts.heading};
   display: block;
   font-weight: ${({ size }) => () => {
     switch (size) {
       case 'large':
+        return '700';
+      case 'small':
         return '700';
       default:
         return '400';
@@ -19,6 +21,8 @@ export const TitleText = styled(Text)`
     switch (size) {
       case 'large':
         return '5rem';
+      case 'small':
+        return '1.5rem';
       default:
         return '2rem';
     }
@@ -27,6 +31,8 @@ export const TitleText = styled(Text)`
     switch (size) {
       case 'large':
         return '1';
+      case 'small':
+        return '1.2rem';
       default:
         return '1.2';
     }
@@ -35,16 +41,22 @@ export const TitleText = styled(Text)`
     switch (size) {
       case 'large':
         return '1.5rem 0';
+      case 'small':
+        return '1rem 0';
       default:
         return '0';
     }
   }};
-
+  ${layout};
+  ${color};
+  ${space};
   ${MEDIA.TABLET`
     font-size: ${({ size }) => () => {
       switch (size) {
         case 'large':
           return '2.6rem';
+        case 'small':
+          return '1.25rem';
         default:
           return '2rem';
       }
