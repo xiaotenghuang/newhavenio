@@ -15,7 +15,9 @@ import * as Styled from './footer.css';
 const Footer = () => (
   <Styled.Container>
     <Styled.Grid>
-      <Logo squareColor={theme.colors.Grays[60]} />
+      <Styled.LogoContainer>
+        <Logo squareColor={theme.colors.Grays[60]} />
+      </Styled.LogoContainer>
 
       <Styled.FooterSection>
         <p className="heading">Group 1</p>

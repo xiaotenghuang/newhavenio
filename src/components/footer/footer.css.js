@@ -25,6 +25,11 @@ export const Grid = styled.div`
   }
 `;
 
+export const LogoContainer = styled.div`
+  max-width: 74px;
+  max-height: 74px;
+`;
+
 export const FooterSection = styled.div`
   .heading {
     font-size: 1.2rem;
