@@ -28,6 +28,8 @@ const Logo = ({
 Logo.propTypes = {
   squareColor: PropTypes.string,
   letterColor: PropTypes.string,
+  hoverSquareColor: PropTypes.string,
+  hoverLetterColor: PropTypes.string,
 };
 
 export default Logo;
