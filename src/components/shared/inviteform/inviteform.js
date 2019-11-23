@@ -34,7 +34,7 @@ const InviteForm = () => {
         onChange={e => setEmail(e.target.value)}
         value={email}
       />
-      <Button type="button" click={handleSubmit}>
+      <Button type="button" onClick={handleSubmit}>
         Get Invite
       </Button>
     </Styled.Container>
