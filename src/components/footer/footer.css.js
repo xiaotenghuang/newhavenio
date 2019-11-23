@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import { theme } from 'constants/theme';
+import { space, layout } from 'styled-system';
 
 export const Container = styled.section`
+  ${space};
   width: 100%;
   background: ${theme.colors.Whites[100]};
   /* position: absolute; */
-  padding: 1rem 0;
+  padding: 3rem 0;
   /* bottom: -500; */
   display: flex;
   justify-content: center;
@@ -62,6 +64,8 @@ export const CopyrightSection = styled.div`
   flex: 1 100%;
   display: flex;
   justify-content: center;
+  display: block;
+  margin-top: 3rem;
   text-align: center;
   font-size: 1rem;
   color: ${theme.colors.Grays[60]};
