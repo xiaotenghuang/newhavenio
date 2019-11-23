@@ -52,6 +52,7 @@ export const Container = styled.button`
   font-weight: 600;
   font-family: ${theme.fonts.heading};
   padding: 1rem 2rem;
+  text-decoration: none;
   :disabled {
     cursor: default;
   }
@@ -62,7 +63,7 @@ export const Container = styled.button`
 export const ButtonWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
-  button + button {
+  > * + * {
     margin-left: 1rem;
   }
 `;

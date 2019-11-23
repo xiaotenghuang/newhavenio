@@ -5,12 +5,13 @@ import * as Styled from './button.css';
 /**
  * A static display component that provides padding and a slight shadow.
  */
-const Button = ({ children, disabled, palette, onClick, type }) => (
+const Button = ({ children, disabled, palette, onClick, type, ...props }) => (
   <Styled.Container
     disabled={disabled}
     palette={palette}
     onClick={onClick}
     type={type}
+    {...props}
   >
     {children}
   </Styled.Container>
