@@ -46,10 +46,10 @@ test('PWA Score above 70', t => {
   score >= 0.7 ? t.pass() : t.fail();
 });
 
-test('Accessibility Score above 90', t => {
+test('Accessibility Score above 70', t => {
   const score = scores['accessibility'].score;
   t.log(logScore(score));
-  score >= 0.9 ? t.pass() : t.fail();
+  score >= 0.7 ? t.pass() : t.fail();
 });
 
 test('Best Practices Score above 90', t => {
