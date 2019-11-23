@@ -29,7 +29,15 @@ const Index = () => (
       </Box>
       <Button.Wrapper>
         <Button palette="secondary">Join the Slack</Button>
-        <Button palette="tertiary">Join the Meetup</Button>
+        <Button
+          as="a"
+          href="https://www.meetup.com/newhavenio/"
+          target="_blank"
+          rel="noopener noreferrer"
+          palette="tertiary"
+        >
+          Join the Meetup
+        </Button>
       </Button.Wrapper>
     </Box>
     <Box padding="2rem 4rem">
@@ -39,8 +47,21 @@ const Index = () => (
       <Title as="h2" size="large" weight="800" color="Grays.100" pt="0">
         Join the Slack Community
       </Title>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <Text mb={4} display="block" color="Grays.100">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </Text>
       <InviteForm />
+      <Text fontSize={1} mt={3} display="block" color="Grays.100">
+        Or if you&apos;re already a member{' '}
+        <a
+          href="https://newhavenio.slack.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          sign in
+        </a>
+        .
+      </Text>
     </Box>
     <Box
       minHeight="300px"
