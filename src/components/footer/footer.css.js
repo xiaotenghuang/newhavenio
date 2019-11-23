@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { theme } from 'constants/theme';
-import { space, layout } from 'styled-system';
+import { space } from 'styled-system';
 
 export const Container = styled.section`
   ${space};
