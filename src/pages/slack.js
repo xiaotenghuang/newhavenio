@@ -7,8 +7,8 @@ import Title from 'components/shared/title';
 const Slack = () => (
   <Layout>
     <Head pageTitle="Slack" />
-    <Box>
-      <Title as="h2" size="large">
+    <Box padding="2rem 4rem">
+      <Title as="h2" size="large" color="Oranges.100">
         Slack
       </Title>
     </Box>

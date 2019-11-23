@@ -8,8 +8,8 @@ import Title from 'components/shared/title';
 const About = () => (
   <Layout>
     <Head pageTitle="About" />
-    <Box>
-      <Title as="h2" size="large">
+    <Box padding="2rem 4rem">
+      <Title as="h2" size="large" color="Oranges.100">
         About
       </Title>
     </Box>

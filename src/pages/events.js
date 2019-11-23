@@ -3,14 +3,14 @@ import P from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Head from 'components/head';
-import Box from 'components/shared//box';
+import Box from 'components/shared/box';
 import Title from 'components/shared/title';
 
 const Events = ({ data: { meetupGroup } }) => (
   <Layout>
     <Head pageTitle="Events" />
-    <Box>
-      <Title as="h2" size="large">
+    <Box padding="2rem 4rem">
+      <Title as="h2" size="large" color="Oranges.100">
         Events
       </Title>
       We are currently {meetupGroup.members} members strong!

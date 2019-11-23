@@ -7,8 +7,8 @@ import Box from 'components/shared/box';
 const Resources = () => (
   <Layout>
     <Head pageTitle="Resources" />
-    <Box>
-      <Title as="h2" size="large">
+    <Box padding="2rem 4rem">
+      <Title as="h2" size="large" color="Oranges.100">
         Resources
       </Title>
     </Box>
