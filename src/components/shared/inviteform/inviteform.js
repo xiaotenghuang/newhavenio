@@ -71,12 +71,12 @@ const InviteForm = () => {
           case 'already_in_team_invited_user':
             return setMessage({
               error: true,
-              message: 'You have already been invited to this team.',
+              body: 'You have already been invited to this team.',
             });
           case 'invalid_email':
             return setMessage({
               error: true,
-              message: 'Please enter a valid email address.',
+              body: 'Please enter a valid email address.',
             });
           default:
             return setMessage(
