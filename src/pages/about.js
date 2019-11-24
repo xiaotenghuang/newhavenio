@@ -11,8 +11,6 @@ import TeamMember from 'components/shared/teammember';
 const About = ({ data }) => {
   const teamMembers = data.allTeamYaml.edges;
   const memberImages = data.allImageSharp.edges;
-  console.error(data);
-  console.error(memberImages);
   return (
     <Layout>
       <Head pageTitle="About" />

@@ -7,7 +7,6 @@ import * as Styled from './teammember.css';
  * A static component to display image, name, title and description of a team member
  */
 const TeamMember = ({ name, title, description, image }) => {
-  console.warn(image);
   return (
     <Styled.Container>
       {image && <Styled.Img fluid={image.node.fluid} />}
