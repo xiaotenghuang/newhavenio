@@ -40,7 +40,7 @@ const Index = () => (
         </Button>
       </Button.Wrapper>
     </Box>
-    <Box padding="2rem 4rem">
+    <Box padding="6rem 4rem">
       <Title color="Oranges.100" size="small" weight="800" py="1rem">
         ONLINE CHAT
       </Title>
