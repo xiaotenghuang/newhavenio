@@ -79,9 +79,11 @@ const InviteForm = () => {
               body: 'Please enter a valid email address.',
             });
           default:
-            return setMessage(
-              'An unexpected error occurred. Please refresh the page and try again.'
-            );
+            return setMessage({
+              error: true,
+              message:
+                'An unexpected error occurred. Please refresh the page and try again.',
+            });
         }
       } else {
         return setMessage({

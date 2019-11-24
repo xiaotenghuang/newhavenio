@@ -12,7 +12,7 @@ export const Input = styled.input`
   padding: 1rem;
   background-color: white;
   border: 1px solid ${p => p.theme.colors.Grays[8]};
-  width: 240px;
+  width: 300px;
   color: ${p => p.theme.colors.Grays[100]};
   ::placeholder {
     color: ${p => p.theme.colors.Grays[60]};
