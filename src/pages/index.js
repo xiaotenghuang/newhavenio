@@ -10,6 +10,8 @@ import Title from 'components/shared/title';
 import InviteForm from 'components/shared/inviteform';
 import EventList from 'components/shared/eventlist';
 
+import { HeroSection, EventSection } from './index.css';
+
 const Index = ({
   data: {
     pagesYaml: {
@@ -18,12 +20,11 @@ const Index = ({
   },
 }) => (
   <Layout>
-    <Box
+    <HeroSection
       display="flex"
       flexDirection="column"
-      minHeight="480px"
       position="relative"
-      padding="0 4rem"
+      padding="0 4rem 6rem"
       alignItems="flex-start"
       bg="Oranges.100"
     >
@@ -47,7 +48,7 @@ const Index = ({
           Join the Meetup
         </Button>
       </Button.Wrapper>
-    </Box>
+    </HeroSection>
     <Box padding="6rem 4rem">
       <Title
         color="Oranges.100"
@@ -66,13 +67,13 @@ const Index = ({
       </Text>
       <InviteForm />
     </Box>
-    <Box
+    <EventSection
       minHeight="300px"
       position="relative"
       display="flex"
       flexDirection="column"
       alignItems="flex-end"
-      padding={['2rem', '6rem 4rem']}
+      padding={['8rem 2rem 0', '8rem 4rem']}
       style={{
         overflow: 'hidden',
       }}
@@ -91,7 +92,7 @@ const Index = ({
         {events.title}
       </Title>
       <EventList count={7} />
-    </Box>
+    </EventSection>
   </Layout>
 );
 
