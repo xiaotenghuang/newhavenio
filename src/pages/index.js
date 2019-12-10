@@ -10,7 +10,7 @@ import Title from 'components/shared/title';
 import InviteForm from 'components/shared/inviteform';
 import EventList from 'components/shared/eventlist';
 
-import { HeroSection, EventSection } from './index.css';
+import { HeroSection, EventSection } from 'components/homepage';
 
 const Index = ({
   data: {
