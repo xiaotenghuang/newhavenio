@@ -89,7 +89,7 @@ const Index = ({
       <Title as="h2" size="large" color="Grays.100" pt="0">
         {events.title}
       </Title>
-      <EventList count={7} />
+      <EventList count={5} />
     </EventSection>
   </Layout>
 );
