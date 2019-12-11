@@ -2,7 +2,7 @@ import reactHeadroom from 'react-headroom';
 import styled from 'styled-components';
 
 export const Headroom = styled(reactHeadroom)`
-  background: ${p => p.theme.colors.Oranges[100]};
+  background: ${p => p.theme.colors.Gradients.Orange};
   height: 140px;
 
   svg {
@@ -11,7 +11,7 @@ export const Headroom = styled(reactHeadroom)`
     transition: all 0.3s ease;
   }
   .headroom--pinned {
-    background: ${p => p.theme.colors.Oranges[100]};
+    background: ${p => p.theme.colors.Gradients.Orange};
     svg {
       width: 25px;
       height: 25px;

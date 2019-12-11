@@ -6,6 +6,7 @@ import Box from 'components/shared/box';
 export const HeroSection = styled(Box).attrs(() => ({
   forwardedAs: 'section',
 }))`
+  background: ${p => p.theme.colors.Gradients.Orange};
   padding-bottom: 8rem;
   clip-path: polygon(0 89%, 0 0, 100% 0, 100% 80%, 40% 100%);
 
@@ -21,5 +22,6 @@ export const HeroSection = styled(Box).attrs(() => ({
 export const EventSection = styled(Box).attrs(() => ({
   forwardedAs: 'section',
 }))`
+  background: ${p => p.theme.colors.Gradients.Gray};
   clip-path: polygon(0 200px, 40% 0, 100% 100px, 100% 100%, 0 100%);
 `;

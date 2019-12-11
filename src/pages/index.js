@@ -26,7 +26,6 @@ const Index = ({
       position="relative"
       padding="0 4rem 6rem"
       alignItems="flex-start"
-      bg="Oranges.100"
     >
       <Title as="h2" size="large" color="Whites.100" maxWidth="860px">
         {home.title}
@@ -77,7 +76,6 @@ const Index = ({
       style={{
         overflow: 'hidden',
       }}
-      bg="Grays.8"
     >
       <Title
         color="Oranges.100"
