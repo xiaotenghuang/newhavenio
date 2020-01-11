@@ -1,11 +1,11 @@
-import React from 'react';
-import P from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
-
 import Box from 'components/shared/box';
-import Text from 'components/shared/text';
-
 import EventCard from 'components/shared/eventcard';
+import Text from 'components/shared/text';
+import isPast from 'date-fns/isPast';
+import parse from 'date-fns/parse';
+import { graphql, useStaticQuery } from 'gatsby';
+import P from 'prop-types';
+import React from 'react';
 
 const EventList = ({ count }) => {
   // TODO: Possibly combine with events.js query if other components there need
@@ -37,7 +37,13 @@ const EventList = ({ count }) => {
     }
   `);
 
-  const [nextEvent, ...otherEvents] = data.allMeetupEvent.edges.slice(0, count);
+  const excludePastEvents = event => {
+    return !isPast(parse(event.node.local_date, 'yyyy-MM-dd', new Date()));
+  };
+
+  const [nextEvent, ...otherEvents] = data.allMeetupEvent.edges
+    .filter(excludePastEvents)
+    .slice(0, count);
 
   return (
     <Box display="flex" flexDirection="column">
