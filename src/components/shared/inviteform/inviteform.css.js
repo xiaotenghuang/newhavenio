@@ -33,7 +33,7 @@ export const Input = styled.input`
   font-size: 18px;
   padding: 1rem;
   background-color: white;
-  border: 1px solid ${p => p.theme.colors.Grays[8]};
+  border: 1px solid ${p => p.theme.colors.Grays[30]};
   width: 300px;
   color: ${p => p.theme.colors.Grays[100]};
   ::placeholder {
