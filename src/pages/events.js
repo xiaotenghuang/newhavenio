@@ -6,6 +6,7 @@ import Layout from 'components/layout';
 import Head from 'components/head';
 import Box from 'components/shared/box';
 import Title from 'components/shared/title';
+import Text from 'components/shared/text';
 import EventList from 'components/shared/eventlist/eventlist';
 
 const Events = ({ data: { meetupGroup } }) => (
@@ -15,8 +16,13 @@ const Events = ({ data: { meetupGroup } }) => (
       <Title as="h2" size="large" color="Oranges.100">
         Events
       </Title>
-      We are currently {meetupGroup.members} members strong!
-      <a href={meetupGroup.link}>Join us!</a>
+      <Text as="p" fontSize="3">
+        We are currently {meetupGroup.members} members strong!{' '}
+        <a href={meetupGroup.link} target="_blank" rel="noopener noreferrer">
+          Join the Meetup
+        </a>
+        .
+      </Text>
       <EventList />
     </Box>
   </Layout>
