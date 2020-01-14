@@ -1,6 +1,8 @@
+import React, { useState, useEffect, useRef } from 'react';
+import P from 'prop-types';
 import { Link } from 'gatsby';
-import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { Location } from '@reach/router';
 
 import MobileNav from 'components/header/mobilenav';
 import Nav from 'components/header/nav';
@@ -10,24 +12,50 @@ import breakpoints from 'constants/theme/breakpoints';
 
 import * as Styled from './header.css';
 
-const Header = () => {
+const Header = ({ pathname }) => {
+  const [prevPath, setPrevPath] = useState(pathname);
+  const headroomRef = useRef(null);
+  // There is a bug with headroom where the header doesn't resize when clicking
+  // on the pinned header. This forces a resize to set the header to the proper
+  // height after routing.
+  useEffect(() => {
+    if (pathname !== prevPath && !!headroomRef.current) {
+      window.headroom = headroomRef.current;
+      setTimeout(headroomRef.current.setHeightOffset, 300);
+      setPrevPath(pathname);
+    }
+  }, [pathname]);
+
   const isMobile = useMediaQuery({
     query: `(max-width: ${breakpoints.md})`,
   });
 
   return (
-    <Styled.Headroom>
-      <div className="headroom--inner">
-        <Link to="/">
-          <Logo
-            squareColor={theme.colors.Whites[100]}
-            letterColor="transparent"
-          />
-        </Link>
-        {isMobile ? <MobileNav /> : <Nav />}
-      </div>
-    </Styled.Headroom>
+    <Location>
+      {({ location: { pathname } }) => (
+        <Styled.Headroom path={pathname} ref={headroomRef}>
+          <div className="headroom--inner">
+            <Link to="/">
+              <Logo
+                squareColor={theme.colors.Whites[100]}
+                letterColor="transparent"
+              />
+            </Link>
+            {isMobile ? <MobileNav /> : <Nav />}
+          </div>
+        </Styled.Headroom>
+      )}
+    </Location>
   );
 };
 
-export default Header;
+Header.propTypes = {
+  pathname: P.object.isRequired,
+};
+
+const HeaderWithLocation = () => (
+  <Location>
+    {({ location: { pathname } }) => <Header pathname={pathname} />}
+  </Location>
+);
+export default HeaderWithLocation;
