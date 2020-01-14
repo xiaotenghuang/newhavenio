@@ -11,9 +11,12 @@ const TECH_TERMS = [
   // List created based on active Slack channels and commonly discussed topics -- can add more.
   // The carets are an additional delay in ms for short words.
   'AWS^100',
+  'data science',
   'DevOps',
   'Docker',
+  'Git^100',
   'interview prep',
+  'infosec',
   'Javascript',
   'Linux',
   'open source',
@@ -23,7 +26,7 @@ const TECH_TERMS = [
   'Ruby',
   'UX^200',
   'Vim^100',
-  'data science',
+  'web dev',
 ];
 
 // Empirically measured to cause word wrap.
