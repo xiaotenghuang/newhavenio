@@ -64,7 +64,11 @@ export const Container = styled(motion.button)`
   :disabled {
     cursor: default;
   }
+  :active {
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.35);
+  }
   transition-duration: ${timeout}ms;
+  transition: box-shadow 100ms, background-color ${timeout}ms;
 
   ${p => PALETTES[p.palette]}
   ${space};

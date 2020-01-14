@@ -24,28 +24,26 @@ const Resources = ({
       <Title as="h2" size="large" color="Oranges.100">
         {home.title}
       </Title>
-      <Box my={4}>
-        <Title
-          color="Oranges.100"
-          size="small"
-          weight="800"
-          py="1rem"
-          textTransform="uppercase"
-        >
-          {rules.title}
-        </Title>
-        <Text as="p" fontSize={3}>
-          {rules.description}
-        </Text>
-        <Button
-          as="a"
-          href="https://github.com/newhavenio/code-of-conduct/blob/master/README.md"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Code of Conduct
-        </Button>
-      </Box>
+      <Title
+        color="Oranges.100"
+        size="small"
+        weight="800"
+        py="1rem"
+        textTransform="uppercase"
+      >
+        {rules.title}
+      </Title>
+      <Text as="p" fontSize={3}>
+        {rules.description}
+      </Text>
+      <Button
+        as="a"
+        href="https://github.com/newhavenio/code-of-conduct/blob/master/README.md"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Code of Conduct
+      </Button>
       <Box my={4}>
         <Title
           color="Oranges.100"
