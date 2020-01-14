@@ -1,8 +1,18 @@
 import React, { useCallback, useEffect } from 'react';
+import { createGlobalStyle } from 'styled-components';
 import PropTypes from 'prop-types';
 import { Dialog } from '@reach/dialog';
 
 import '@reach/dialog/styles.css';
+
+// @reach/dialog imports react-remove-scroll-bar which incorrectly computes
+// screen width for very small screens, adding an extra margin-right when the
+// mobile nav is opened. This removes it.
+const FixReactRemoveScrollGlobalStyle = createGlobalStyle`
+  html body {
+    margin-right: 0 !important;
+  }
+`;
 
 const Modal = ({ open, hideModal, children, ...props }) => {
   const handleKeyDown = useCallback(
@@ -16,9 +26,12 @@ const Modal = ({ open, hideModal, children, ...props }) => {
   }, [handleKeyDown]);
 
   return (
-    <Dialog isOpen={open} {...props}>
-      {children}
-    </Dialog>
+    <>
+      {open && <FixReactRemoveScrollGlobalStyle />}
+      <Dialog isOpen={open} {...props}>
+        {children}
+      </Dialog>
+    </>
   );
 };
 
