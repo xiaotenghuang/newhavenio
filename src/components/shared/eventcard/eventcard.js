@@ -143,6 +143,7 @@ const EventCard = ({ event, type }) => {
           mt={{ _: 4, sm: 0 }}
           ml={{ _: 0, sm: 2 }}
           alignSelf={{ sm: 'flex-end' }}
+          alignItems="flex-end"
         >
           <Button
             as="a"

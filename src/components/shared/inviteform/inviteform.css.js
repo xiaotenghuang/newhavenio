@@ -60,6 +60,7 @@ export const InputAndButton = styled.div`
 `;
 
 export const Input = styled.input`
+  flex: 1 1 auto;
   box-sizing: border-box;
   font-size: 18px;
   padding: 1rem;

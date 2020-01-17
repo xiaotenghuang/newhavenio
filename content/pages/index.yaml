@@ -34,6 +34,7 @@ events:
 resources:
   home:
     title: Rules and Resources
+    contact: Get in touch
   rules:
     title: Code of conduct
     description: All members of NewHaven.io are expected to abide by our code of conduct, found below.
