@@ -9,8 +9,9 @@ import Text from 'components/shared/text';
 import Box from 'components/shared/box';
 import PageContainer from 'components/shared/pagecontainer';
 import Button from 'components/shared/button';
-
 import ResourceList from 'components/shared/resourcelist';
+import MailtoIcon from 'images/mailto-icon.svg';
+import ScaleIcon from 'images/scale-icon.svg';
 
 const Resources = ({
   data: {
@@ -42,8 +43,9 @@ const Resources = ({
         href="https://github.com/newhavenio/code-of-conduct/blob/master/README.md"
         target="_blank"
         rel="noopener noreferrer"
+        prefixIcon={<ScaleIcon />}
       >
-        {home.title}
+        {rules.title}
       </Button>
       <Box my={4}>
         <Title
@@ -57,6 +59,13 @@ const Resources = ({
         </Title>
         <ResourceList roles={resources.role} />
       </Box>
+      <Button
+        as="a"
+        href="mailto:organizers@newhaven.io?subject=NewHaven.io"
+        prefixIcon={<MailtoIcon />}
+      >
+        {home.contact}
+      </Button>
     </PageContainer>
   </Layout>
 );
@@ -73,6 +82,7 @@ export const resourcesQuery = graphql`
       resources {
         home {
           title
+          contact
         }
         rules {
           title

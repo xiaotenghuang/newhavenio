@@ -10,6 +10,7 @@ import Button from 'components/shared/button';
 import Title from 'components/shared/title';
 import Text from 'components/shared/text';
 import EventList from 'components/shared/eventlist/eventlist';
+import MeetupIcon from 'images/meetup-icon.svg';
 
 const Events = ({
   data: {
@@ -32,6 +33,7 @@ const Events = ({
         href="https://www.meetup.com/newhavenio/"
         target="_blank"
         rel="noopener noreferrer"
+        prefixIcon={<MeetupIcon />}
       >
         {home.join}
       </Button>
