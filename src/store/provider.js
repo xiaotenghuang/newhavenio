@@ -7,7 +7,7 @@ import { Provider } from './createContext';
 // TODO: Move this to Netlify env vars @a-trost
 // This is ok, since the site key is not a sensitive secret, but managing on
 // the cloud is easier.
-const RECAPTCHA_SITE_KEY = '6LfTTMQUAAAAALXesYrKf-QxkzL19sGuBlfxPr4l';
+const RECAPTCHA_SITE_KEY = '6Lc9_9kUAAAAAG_o9-tIXGDfV8HYb5xoJ5j1hwOI';
 
 // The provider, which holds the page-wide store and its actions.
 // Feel free to abstract actions and state away from this file.

@@ -12,7 +12,7 @@ const SLACK_INVITE_ENDPOINT = 'https://slack.com/api/users.admin.invite';
 // This is NOT ok! This is a secret!
 // Currently we are using a test key for Netlify. Once we swap for a key on
 // the newhaven.io domain, this MUST be stored in Netlify secret management.
-const RECAPTCHA_SECRET_KEY = '6LfTTMQUAAAAAJirVZO6XgpNCj-94HfJ_rclZu3G';
+const RECAPTCHA_SECRET_KEY = process.env.RECAPTCHA_SECRET_KEY;
 
 /**
  * Invites the given email to our Slack channel.
