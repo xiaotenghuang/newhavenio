@@ -8,8 +8,8 @@ index:
     subtitle: Online chat
     description: The water cooler of the New Haven tech scene.
   events:
-    title: Meet people IRL
-    subtitle: Upcoming events
+    title: Meet People IRL
+    subtitle: Upcoming Events
 about:
   home:
     title: About
@@ -20,22 +20,27 @@ about:
       - foster a culture of creation and experimentation
       - create a stronger tech and startup minded community in New Haven
       - partner with other organizations to achieve these goals
-    contact: Get in touch
+    contact: Get in Touch
   board:
-    title: The board
+    title: The Board
 events:
   home:
     title: Events
     description: NewHaven.io hosts tech-focused and social events in the New Haven area that are open for all to attend.
-    join: Join our Meetup group
+    join: Join our Meetup Group
   eventList:
-    title: Upcoming events
+    title: Upcoming Events
+jobs:
+  home:
+    title: Tech Jobs in New Haven
+    description: We're passionate about helping to grow our local tech scene. What better way to do that than help connect workers with local employers?
+    submitpr: Submit a Job
 resources:
   home:
     title: Rules and Resources
-    contact: Get in touch
+    contact: Get in Touch
   rules:
-    title: Code of conduct
+    title: Code of Conduct
     description: All members of NewHaven.io are expected to abide by our code of conduct, found below.
   resources:
     title: How can we help you?
@@ -45,12 +50,12 @@ resources:
         - "Community: Social gatherings and hack nights"
         - "Grow: A chance to learn, to mentor, to present"
         - "Network: Find a new team, teammate, or co-founder"
-      - title: Local software meetup group
+      - title: Local Software Meetup Group
         description:
         - "Wider outreach & visibility"
         - "Access to meeting spaces"
         - "Logistical help"
-      - title: Software company
+      - title: Software Company
         description:
         - "Recruiting & hiring"
         - "A way for your employees to grow and learn"

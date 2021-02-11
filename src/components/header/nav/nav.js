@@ -44,6 +44,11 @@ const Nav = () => (
               </Link>
             </motion.li>
             <motion.li {...entryAnimation(3)}>
+              <Link partiallyActive activeClassName="active" to="/jobs/">
+                Jobs
+              </Link>
+            </motion.li>
+            <motion.li {...entryAnimation(4)}>
               <Link partiallyActive activeClassName="active" to="/resources/">
                 Rules and Resources
               </Link>
