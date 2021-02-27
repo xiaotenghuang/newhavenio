@@ -16,7 +16,7 @@ export const Article = styled(Card).attrs(() => ({ forwardedAs: 'article' }))`
 
   @media screen and (min-width: ${p => p.theme.breakpoints.xlLower}) {
     grid-template-columns: auto minmax(0, 1fr) auto;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
       'date title featured-image'
       'blank image featured-image'

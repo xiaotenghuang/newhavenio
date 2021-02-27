@@ -10,6 +10,7 @@ import Button from 'components/shared/button';
 import Title from 'components/shared/title';
 import Text from 'components/shared/text';
 import JobPost from 'components/shared/jobPost';
+import { Job } from 'customtypes';
 import GithubIcon from 'images/github-icon.svg';
 
 const Jobs = ({
@@ -17,17 +18,7 @@ const Jobs = ({
     pagesYaml: {
       jobs: { home },
     },
-    jobsYaml: {
-      jobPosts: {
-        company,
-        description,
-        jobTitle,
-        jobURL,
-        location,
-        salary,
-        tech,
-      },
-    },
+    allJobsYaml: { edges: jobPosts },
   },
 }) => (
   <Layout>
@@ -41,7 +32,7 @@ const Jobs = ({
       </Text>
       <Button
         as="a"
-        href="https://github.com/newhavenio/newhavenio/"
+        href="https://github.com/newhavenio/newhavenio/tree/master/content/jobs"
         target="_blank"
         rel="noopener noreferrer"
         prefixIcon={<GithubIcon />}
@@ -58,56 +49,37 @@ const Jobs = ({
         >
           Local-ish Jobs
         </Title>
-        <JobPost
-          company="Clarity SSI"
-          jobURL="https://clarityssi.com"
-          jobTitle="DevOps Engineer"
-          location="Madison, CT // Remote"
-          tech="ABC DEF GHI"
-          salary="$100K"
-          description="Let me give that oatmeal some brown sugar. That's how Tony Wonder lost a nut. For the same reason you should believe a hundred dollar bill is no more than a hundred pennies! Sorry, some of my students are arguing the significance of the shankbone on the seder plate. But we do not - NOT wag our genitals at one another to make a point."
-        />
-        <JobPost
-          company="Clarity SSI"
-          jobURL="https://clarityssi.com"
-          jobTitle="DevOps Engineer"
-          location="Madison, CT // Remote"
-          tech="ABC DEF GHI"
-          salary="$100K"
-          description="Let me give that oatmeal some brown sugar. That's how Tony Wonder lost a nut. For the same reason you should believe a hundred dollar bill is no more than a hundred pennies! Sorry, some of my students are arguing the significance of the shankbone on the seder plate. But we do not - NOT wag our genitals at one another to make a point."
-        />
-        <JobPost
-          company="Clarity SSI"
-          jobURL="https://clarityssi.com"
-          jobTitle="DevOps Engineer"
-          location="Madison, CT // Remote"
-          tech="ABC DEF GHI"
-          salary="$100K"
-          description="Let me give that oatmeal some brown sugar. That's how Tony Wonder lost a nut. For the same reason you should believe a hundred dollar bill is no more than a hundred pennies! Sorry, some of my students are arguing the significance of the shankbone on the seder plate. But we do not - NOT wag our genitals at one another to make a point."
-        />
+        {jobPosts.map(({ node: jobPost }) => (
+          <JobPost
+            company={jobPost.company}
+            hidden={jobPost.hidden}
+            jobURL={jobPost.jobURL}
+            jobTitle={jobPost.jobTitle}
+            location={jobPost.location}
+            tech={jobPost.tech}
+            salary={jobPost.salary}
+            description={jobPost.description}
+          />
+        ))}
       </Box>
     </PageContainer>
   </Layout>
 );
 
-Jobs.propTypes = {
-  data: P.shape({
-    pagesYaml: P.any.isRequired,
-    jobsYaml: P.any.isRequired,
-  }),
-};
-
 export const jobPostsQuery = graphql`
-  query JobPostsQuery {
-    jobsYaml {
-      jobPosts {
-        company
-        description
-        jobTitle
-        jobURL
-        location
-        salary
-        tech
+  query JobPosts2Query {
+    allJobsYaml {
+      edges {
+        node {
+          company
+          hidden
+          description
+          jobTitle
+          jobURL
+          location
+          salary
+          tech
+        }
       }
     }
     pagesYaml {
@@ -121,5 +93,14 @@ export const jobPostsQuery = graphql`
     }
   }
 `;
+
+Jobs.propTypes = {
+  data: P.shape({
+    pagesYaml: P.any.isRequired,
+    allJobsYaml: P.shape({
+      edges: P.arrayOf(Job),
+    }),
+  }),
+};
 
 export default Jobs;
