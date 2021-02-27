@@ -6,17 +6,6 @@ Hey there! If you're a local-ish tech company looking to hire talent we at NewHa
 
 Just [clone this repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository), add your information to [this page](https://github.com/newhavenio/newhavenio/tree/master/content/jobs/jobs.yaml), and submit a pull request.
 
-```markdown
-- company: "NewHaven.IO"
-  jobURL: "https://newhaven.io"
-  jobTitle: "Community Moderator"
-  location: "New Haven, CT // Remote"
-  remote: "Yes"
-  tech: "Slack, MeetUp, GatsbyJS"
-  salary: "Volunteer"
-  description: "We're looking for help with some community moderation. As vaccines keep rolling out we're looking at ways we can begin to breathe life back into the group. We want to wade back into holding some events and we're going to need help keeping an eye our Slack team and Meetup page. Over time we can fold whoever takes this role into our organizing and leadership teams. If you've gotten some value from IO in the past we'd love your help in carrying it forward."
-```
-
 Add information on your role(s) as a new object(s) at the bottom of the file. Here's an example:
 
 ```markdown
