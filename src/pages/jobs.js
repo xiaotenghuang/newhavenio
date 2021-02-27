@@ -9,6 +9,7 @@ import PageContainer from 'components/shared/pagecontainer';
 import Button from 'components/shared/button';
 import Title from 'components/shared/title';
 import Text from 'components/shared/text';
+import JobPost from 'components/shared/jobPost';
 import GithubIcon from 'images/github-icon.svg';
 
 const Jobs = ({
@@ -44,7 +45,35 @@ const Jobs = ({
           py="1rem"
           textTransform="uppercase"
         >
+          Local-ish Jobs
         </Title>
+        <JobPost
+          company="Clarity SSI"
+          jobURL="https://clarityssi.com"
+          jobTitle="DevOps Engineer"
+          location="Madison, CT // Remote"
+          tech="ABC DEF GHI"
+          salary="$100K"
+          description="Let me give that oatmeal some brown sugar. That's how Tony Wonder lost a nut. For the same reason you should believe a hundred dollar bill is no more than a hundred pennies! Sorry, some of my students are arguing the significance of the shankbone on the seder plate. But we do not - NOT wag our genitals at one another to make a point."
+        />
+        <JobPost
+          company="Clarity SSI"
+          jobURL="https://clarityssi.com"
+          jobTitle="DevOps Engineer"
+          location="Madison, CT // Remote"
+          tech="ABC DEF GHI"
+          salary="$100K"
+          description="Let me give that oatmeal some brown sugar. That's how Tony Wonder lost a nut. For the same reason you should believe a hundred dollar bill is no more than a hundred pennies! Sorry, some of my students are arguing the significance of the shankbone on the seder plate. But we do not - NOT wag our genitals at one another to make a point."
+        />
+        <JobPost
+          company="Clarity SSI"
+          jobURL="https://clarityssi.com"
+          jobTitle="DevOps Engineer"
+          location="Madison, CT // Remote"
+          tech="ABC DEF GHI"
+          salary="$100K"
+          description="Let me give that oatmeal some brown sugar. That's how Tony Wonder lost a nut. For the same reason you should believe a hundred dollar bill is no more than a hundred pennies! Sorry, some of my students are arguing the significance of the shankbone on the seder plate. But we do not - NOT wag our genitals at one another to make a point."
+        />
       </Box>
     </PageContainer>
   </Layout>

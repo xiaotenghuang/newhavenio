@@ -33,7 +33,7 @@ events:
 jobs:
   home:
     title: Tech Jobs in New Haven
-    description: We're passionate about helping to grow our local tech scene. What better way to do that than help connect workers with local employers?
+    description: We're passionate about helping grow our local tech scene. What better way to do that than help connect workers with local employers?
     submitpr: Submit a Job
 resources:
   home:
