@@ -56,6 +56,7 @@ const Jobs = ({
             jobURL={jobPost.jobURL}
             jobTitle={jobPost.jobTitle}
             location={jobPost.location}
+            remote={jobPost.remote}
             tech={jobPost.tech}
             salary={jobPost.salary}
             description={jobPost.description}
@@ -77,6 +78,7 @@ export const jobPostsQuery = graphql`
           jobTitle
           jobURL
           location
+          remote
           salary
           tech
         }

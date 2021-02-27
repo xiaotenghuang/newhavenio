@@ -20,6 +20,7 @@ const JobPost = ({
   jobURL,
   jobTitle,
   location,
+  remote,
   tech,
   salary,
   description,
@@ -40,7 +41,7 @@ const JobPost = ({
             gridArea="title"
           >
             <JobPrimary>
-              {company} ({location})
+              {company} ({location} <span>|| Remote Friendly: {remote}</span>)
             </JobPrimary>
             <JobSecondary>
               {jobTitle}
@@ -79,6 +80,7 @@ JobPost.propTypes = {
   jobURL: P.string.isRequired,
   jobTitle: P.string.isRequired,
   location: P.string.isRequired,
+  remote: P.string.isRequired,
   tech: P.string.isRequired,
   salary: P.string,
   description: P.string.isRequired,

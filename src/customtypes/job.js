@@ -8,6 +8,7 @@ const Job = P.shape({
     jobTitle: P.string.isRequired,
     jobURL: P.string.isRequired,
     location: P.string.isRequired,
+    remote: P.string.isRequired,
     salary: P.string,
     tech: P.string.isRequired,
   }),
