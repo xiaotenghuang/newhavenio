@@ -17,6 +17,17 @@ const Jobs = ({
     pagesYaml: {
       jobs: { home },
     },
+    jobsYaml: {
+      jobPosts: {
+        company,
+        description,
+        jobTitle,
+        jobURL,
+        location,
+        salary,
+        tech,
+      },
+    },
   },
 }) => (
   <Layout>
@@ -82,11 +93,23 @@ const Jobs = ({
 Jobs.propTypes = {
   data: P.shape({
     pagesYaml: P.any.isRequired,
+    jobsYaml: P.any.isRequired,
   }),
 };
 
-export const jobsQuery = graphql`
-  query JobsQuery {
+export const jobPostsQuery = graphql`
+  query JobPostsQuery {
+    jobsYaml {
+      jobPosts {
+        company
+        description
+        jobTitle
+        jobURL
+        location
+        salary
+        tech
+      }
+    }
     pagesYaml {
       jobs {
         home {
