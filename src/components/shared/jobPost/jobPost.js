@@ -18,11 +18,12 @@ const JobPost = ({
   company,
   hidden,
   jobURL,
-  jobTitle,
   location,
   remote,
-  tech,
+  jobTitle,
   salary,
+  tech,
+  postExpiration,
   description,
 }) => {
   const onCardClick = useCallback(() => window.open(jobURL), [jobURL]);
@@ -52,6 +53,7 @@ const JobPost = ({
               )}
             </JobSecondary>
             <JobTertiary>Tech: {tech}</JobTertiary>
+            <JobTertiary>Opening Closes: {postExpiration}</JobTertiary>
             <Description
               mt={{ _: 0, lg: 16 }}
               mb={0}
@@ -78,11 +80,12 @@ JobPost.propTypes = {
   company: P.string.isRequired,
   hidden: P.string,
   jobURL: P.string.isRequired,
-  jobTitle: P.string.isRequired,
   location: P.string.isRequired,
   remote: P.string.isRequired,
-  tech: P.string.isRequired,
+  jobTitle: P.string.isRequired,
   salary: P.string,
+  tech: P.string.isRequired,
+  postExpiration: P.string.isRequired,
   description: P.string.isRequired,
 };
 

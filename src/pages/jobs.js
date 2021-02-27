@@ -54,11 +54,12 @@ const Jobs = ({
             company={jobPost.company}
             hidden={jobPost.hidden}
             jobURL={jobPost.jobURL}
-            jobTitle={jobPost.jobTitle}
             location={jobPost.location}
             remote={jobPost.remote}
-            tech={jobPost.tech}
+            jobTitle={jobPost.jobTitle}
             salary={jobPost.salary}
+            tech={jobPost.tech}
+            postExpiration={jobPost.postExpiration}
             description={jobPost.description}
           />
         ))}
@@ -74,13 +75,14 @@ export const jobPostsQuery = graphql`
         node {
           company
           hidden
-          description
-          jobTitle
           jobURL
           location
           remote
+          jobTitle
           salary
           tech
+          postExpiration
+          description
         }
       }
     }
