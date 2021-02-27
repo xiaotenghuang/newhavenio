@@ -4,7 +4,7 @@
 
 Hey there! If you're a local-ish tech company looking to hire talent we at NewHaven.io would love to help out by putting some information about your organization and open role(s) on our website.
 
-Just clone this repository, add your information to [this page](https://github.com/newhavenio/newhavenio/tree/master/content/jobs/jobs.yaml), and submit a pull request.
+Just [clone this repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository), add your information to [this page](https://github.com/newhavenio/newhavenio/tree/master/content/jobs/jobs.yaml), and submit a pull request.
 
 ```markdown
 - company: "NewHaven.IO"
