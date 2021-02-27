@@ -16,7 +16,7 @@ const TECH_TERMS = [
   'Git^100',
   'interview prep',
   'infosec',
-  'Javascript',
+  'JavaScript',
   'Linux',
   'open source',
   'PHP^100',
