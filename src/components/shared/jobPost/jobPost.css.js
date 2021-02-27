@@ -47,7 +47,7 @@ export const Article = styled(Card).attrs(() => ({ forwardedAs: 'article' }))`
 
   background-color: white;
   box-sizing: border-box;
-  padding: 0;
+  padding: 10px 10px 10px 10px;
 `;
 
 export const JobPrimary = styled(Text).attrs(() => ({ forwardedAs: 'h5' }))`
