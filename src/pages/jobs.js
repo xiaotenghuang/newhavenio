@@ -59,7 +59,7 @@ const Jobs = ({
             jobTitle={jobPost.jobTitle}
             salary={jobPost.salary}
             tech={jobPost.tech}
-            postExpiration={jobPost.postExpiration}
+            postedOn={jobPost.postedOn}
             description={jobPost.description}
           />
         ))}
@@ -81,7 +81,7 @@ export const jobPostsQuery = graphql`
           jobTitle
           salary
           tech
-          postExpiration
+          postedOn
           description
         }
       }

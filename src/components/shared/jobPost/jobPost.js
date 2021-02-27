@@ -23,7 +23,7 @@ const JobPost = ({
   jobTitle,
   salary,
   tech,
-  postExpiration,
+  postedOn,
   description,
 }) => {
   const onCardClick = useCallback(() => window.open(jobURL), [jobURL]);
@@ -53,7 +53,7 @@ const JobPost = ({
               )}
             </JobSecondary>
             <JobTertiary>Tech: {tech}</JobTertiary>
-            <JobTertiary>Opening Closes: {postExpiration}</JobTertiary>
+            <JobTertiary>Opening Closes: {postedOn}</JobTertiary>
             <Description
               mt={{ _: 0, lg: 16 }}
               mb={0}
@@ -85,7 +85,7 @@ JobPost.propTypes = {
   jobTitle: P.string.isRequired,
   salary: P.string,
   tech: P.string.isRequired,
-  postExpiration: P.string.isRequired,
+  postedOn: P.string.isRequired,
   description: P.string.isRequired,
 };
 

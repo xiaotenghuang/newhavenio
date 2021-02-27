@@ -10,7 +10,7 @@ const Job = P.shape({
     jobTitle: P.string.isRequired,
     salary: P.string,
     tech: P.string.isRequired,
-    postExpiration: P.string.isRequired,
+    postedOn: P.string.isRequired,
     description: P.string.isRequired,
   }),
 });
