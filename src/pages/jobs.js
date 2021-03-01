@@ -51,6 +51,7 @@ const Jobs = ({
         </Title>
         {jobPosts.map(({ node: jobPost }) => (
           <JobPost
+            key={jobPost.jobURL}
             company={jobPost.company}
             hidden={jobPost.hidden}
             jobURL={jobPost.jobURL}
