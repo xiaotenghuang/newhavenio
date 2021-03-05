@@ -29,13 +29,13 @@ const EventList = ({ count }) => {
             name
             plain_text_description
             short_link
-            venue {
-              name
-              address_1
-              city
-              state
-              zip
-            }
+            # venue {
+            #   name
+            #   address_1
+            #   city
+            #   state
+            #   zip
+            # }
           }
         }
       }
