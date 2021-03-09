@@ -53,7 +53,7 @@ const JobPost = ({
               )}
             </JobSecondary>
             <JobTertiary>Tech: {tech}</JobTertiary>
-            <JobTertiary>Opening Closes: {postedOn}</JobTertiary>
+            <JobTertiary>Posted On: {postedOn}</JobTertiary>
             <Description
               mt={{ _: 0, lg: 16 }}
               mb={0}
