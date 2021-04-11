@@ -17,7 +17,7 @@ const Event = P.shape({
       city: P.string,
       state: P.string,
       zip: P.string,
-    }).isRequired,
+    }),
   }),
 });
 
