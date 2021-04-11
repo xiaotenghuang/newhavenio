@@ -20,7 +20,7 @@ const Resource = ({ title, description }) => (
     <ul>
       {description.map((d, i) => (
         <li key={i}>
-          <Text fontSize={3}>{d}</Text>
+          <Text fontSize={3}>- {d}</Text>
         </li>
       ))}
     </ul>

@@ -48,6 +48,16 @@ const Menu = ({ onClick }) => (
           <Link
             partiallyActive
             activeClassName="active"
+            to="/jobs/"
+            onClick={onClick}
+          >
+            Jobs
+          </Link>
+        </li>
+        <li>
+          <Link
+            partiallyActive
+            activeClassName="active"
             to="/resources/"
             onClick={onClick}
           >
